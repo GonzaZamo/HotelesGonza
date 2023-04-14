@@ -9,6 +9,8 @@ public class HotelDB {
     private String user = "uhjbhiio";
     private String password = "s_AyWIJ2h_ci4I30SvNzs5sg0ck6Oz4Z";
 
+
+    //TODO: crear Hotel? storeHotel, persistHotel....
     public void crearHotel(Hotel hotel) {
         try (Connection conn = DriverManager.getConnection(url, user, password);
              PreparedStatement statement = conn.prepareStatement("SELECT crearHotel(?, ?, ?, ?, ?, ?)")) {

@@ -21,6 +21,8 @@ public class Mostrar {
             throw new SQLException(e);
         }
     }
+
+    //TODO: Esta funcion debe regresar una lista de clientes List<Cliente>
     public static void clientes() throws Exception{
         String query = "SELECT * FROM clientes";
         try (Connection conn = DriverManager.getConnection(url, user, password);

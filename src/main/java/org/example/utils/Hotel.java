@@ -3,6 +3,9 @@ package org.example.utils;
 public class Hotel {
     private String nombre;
     private String calificacion;
+
+    //TODO: Esto no es del dominio de un cliente Es de direccion y de ahi la relacion.
+    //TODO: Estas repitiendo propiedades en ambas clases, para eso existe la relacion con direccion
     private String codigoPostal;
     private String calle;
     private String noExterior;

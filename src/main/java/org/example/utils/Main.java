@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        //TODO: Ok, un Hotel un Cliente, Las reservaciones? los productos? las cuentas? estamos enteros.
         Scanner scanner = new Scanner(System.in);
         System.out.println("Si desea crear un hotel presiona: 1\nSi desea ingresar un cliente presiona: 2");
         String x = scanner.nextLine();
@@ -17,6 +19,12 @@ public class Main {
                 System.out.println("Opcion incorrecta.");
         }
     }
+
+    //TODO: estas 2 funcionaes pertenecen a la logica de negocio de la aplicacion, create una clase HotelManager
+
+    //TODO: Los llamados DB en la industria seria llamdos DAO o Repository, en diferente paquete.
+
+    // TODO: Esta funcion debe de devolver el Hotel
     public static void crearUnHotel(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el nombre del hotel: ");
@@ -37,6 +45,10 @@ public class Main {
         HotelDB hotelDB = new HotelDB();
         hotelDB.crearHotel(hotel);
     }
+
+
+
+    // TODO: Esta funcion debe de devolver el Cliente
     public static void crearUnCliente(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el nombre del cliente: ");
