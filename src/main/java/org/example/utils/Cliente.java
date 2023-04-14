@@ -3,8 +3,14 @@ package org.example.utils;
 public class Cliente {
     private String nombre;
     private String no_documento;
+
+    //TODO: A nivel de modelo de inicio esta bien pero, solo puedes guardar 1 telefono busca la forma en que sea mas escalable <FormasDeContacto>
     private String telefono;
+
+    //TODO: Edad? vas a actualizar todos los dias este dato? si tienes 1,000,000 de clientes. FechaDeNacimiento
     private String edad;
+
+    //TODO: Esto no es del dominio de un cliente Es de direccion y de ahi la relacion.
     private String codigoPostal;
     private String calle;
     private String noExterior;
